@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cn.com.ths.zzy.mos.sso" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ZzyMosSso</name>
+    <js-module name="ZzyMosSso" src="www/ZzyMosSso.js">
+        <clobbers target="cordova.plugins.ZzyMosSso" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ZzyMosSso">
+                <param name="android-package" value="cn.com.ths.zzy.mos.sso.ZzyMosSso" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/ZzyMosSso.java" target-dir="src/cn/com/ths/zzy/mos/sso/ZzyMosSso" />
+        <source-file src="src/android/ZConfigManager.java" target-dir="src/cn/com/ths/zzy/mos/sso/ZzyMosSso" />
+        <source-file src="src/android/uusafe-engine-app-sdk-function.aar" target-dir="libs" />
+        <source-file src="src/android/uusafe-engine-app-sdk-function.aar" target-dir="libs" />
+        <framework src="src/android/uusafe-engine-app-sdk-function.gradle" custom="true" type="gradleReference" /> 
+    </platform>
+</plugin>
