@@ -1,0 +1,25 @@
+{
+  "name": "cn.com.ths.zzy.mos.sso",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "cn.com.ths.zzy.mos.sso",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THS-FE/ZzyMosSso.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "liuyx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THS-FE/ZzyMosSso/issues"
+  },
+  "homepage": "https://github.com/THS-FE/ZzyMosSso#readme"
+}
