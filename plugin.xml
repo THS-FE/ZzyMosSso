@@ -16,7 +16,6 @@
         <source-file src="src/android/ZzyMosSso.java" target-dir="src/cn/com/ths/zzy/mos/sso/ZzyMosSso" />
         <source-file src="src/android/ZConfigManager.java" target-dir="src/cn/com/ths/zzy/mos/sso/ZzyMosSso" />
         <source-file src="src/android/uusafe-engine-app-sdk-function.aar" target-dir="libs" />
-        <source-file src="src/android/uusafe-engine-app-sdk-function.aar" target-dir="libs" />
         <framework src="src/android/uusafe-engine-app-sdk-function.gradle" custom="true" type="gradleReference" /> 
     </platform>
 </plugin>
