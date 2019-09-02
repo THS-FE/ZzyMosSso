@@ -12,10 +12,19 @@
                 <param name="android-package" value="cn.com.ths.zzy.mos.sso.ZzyMosSso" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
         <source-file src="src/android/ZzyMosSso.java" target-dir="src/cn/com/ths/zzy/mos/sso/ZzyMosSso" />
         <source-file src="src/android/ZConfigManager.java" target-dir="src/cn/com/ths/zzy/mos/sso/ZzyMosSso" />
         <source-file src="src/android/uusafe-engine-app-sdk-function.aar" target-dir="libs" />
-        <framework src="src/android/uusafe-engine-app-sdk-function.gradle" custom="true" type="gradleReference" />
+        <framework custom="true" src="src/android/uusafe-engine-app-sdk-function.gradle" type="gradleReference" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ZzyMosSso">
+                <param name="ios-package" value="ZzyMosSso" />
+            </feature>
+        </config-file>
+         <framework src="src/ios/lib/UUPortalToolSDK.framework" custom="true" />
+         <source-file src="src/ios/ZzyMosSso.m" />
     </platform>
 </plugin>

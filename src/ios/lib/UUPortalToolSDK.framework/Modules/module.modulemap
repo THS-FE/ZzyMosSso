@@ -1,0 +1,6 @@
+framework module UUPortalToolSDK {
+  umbrella header "UUPortalToolSDK.h"
+
+  export *
+  module * { export * }
+}
